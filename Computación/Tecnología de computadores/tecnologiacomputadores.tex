@@ -624,6 +624,27 @@
 
 		\subsubsection{Registro de entrada serie, salida serie}
 
+			La salida de un biestable tipo D se conecta a la entrada del siguiente, 
+			de tal forma que en cada pulso de reloj los bits van pasando de uno en uno en 
+			cada biestable. Véase figura \ref{serie_serie}.
+
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[width=0.8\textwidth]{resources/serie_serie.png}
+				\caption{Registro de entrada serie, salida serie}
+				\label{serie_serie}
+			\end{figure}
+
+			Otra posible implementación, para 5bits en este caso y utilizando 
+			biestables RS puede ser la expuesta en la figura \ref{serie_serie2}.
+
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[width=0.8\textwidth]{resources/serie_serie2.png}
+				\caption{Registro de entrada serie, salida serie con biestables RS}
+				\label{serie_serie2}
+			\end{figure}
+
 		\subsubsection{Registro de entrada serie, salida paralelo}
 
 		\subsubsection{Registro de entrada paralelo, salida serie}
