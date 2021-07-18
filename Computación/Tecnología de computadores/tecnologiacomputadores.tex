@@ -696,8 +696,42 @@
 				\label{paralelo_paralelo}
 			\end{figure}
 
-
 		\subsubsection{Registro universal}
+
+			Mediante dos entradas de control realiza las funciones de almacenamiento y desplazamiento 
+			de bits de todos los registros vistos anteriormente. Puede hacer los desplazamientos en 
+			ambas direcciones. Véase figura \ref{registrouniversal}.
+				
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[width=0.8\textwidth]{resources/registrouniversal.png}
+				\caption{Registro universal}
+				\label{registrouniversal}
+			\end{figure}
+
+			\paragraph{Registro universal: 74LS194}
+
+				Este integrado implementa un registro universal de 4 bits utilizando biestables de tipo RS.
+				Dispone de cuatro entradas en paralelo ($P0-P3$) y dos en serie ($D_{SR}$ y $D_{SL}$).
+				También dispone de cuatro salidas en paralelo ($Q0-Q3$) y dos entradas de control ($S0$ y $S1$).
+				Cuenta con una entrada reset ($MR$) y una entrada de reloj.
+				Véase figura \ref{registrouniversal2}.
+
+				\begin{figure}[htp]
+					\centering
+					\includegraphics[width=0.7\textwidth]{resources/registrouniversal2.png}
+					\caption{Registro universal 74LS194}
+					\label{registrouniversal2}
+				\end{figure}
+	
+				Su implementación interna es la expuesta en la figura \ref{registrouniversal3}.
+
+				\begin{figure}[htp]
+					\centering
+					\includegraphics[width=1\textwidth]{resources/registrouniversal3.png}
+					\caption{Diseño del registro universal 74LS194}
+					\label{registrouniversal3}
+				\end{figure}
 
 	\subsection{Contadores}
 
