@@ -674,6 +674,7 @@
 
 			Otra posible implementación utiliza biestables de tipo RS y multiplexores de 
 			dos entradas y una salida para construir un registro de 3 bits
+			Véase figura \ref{paralelo_serie2}.
 
 			\begin{figure}[htp]
 				\centering
@@ -682,8 +683,19 @@
 				\label{paralelo_serie2}
 			\end{figure}
 
-
 		\subsubsection{Registro de entrada paralelo, salida paralelo}
+
+			Los biestables sólo comparten la entrada de reloj. Las entradas entran directamente 
+			a la entrada de cada biestable y para la salida se toma la salida de cada biestable.
+			Véase figura \ref{paralelo_paralelo}.
+
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[width=0.8\textwidth]{resources/paralelo_paralelo.png}
+				\caption{Registro de entrada paralelo, salida paralelo}
+				\label{paralelo_paralelo}
+			\end{figure}
+
 
 		\subsubsection{Registro universal}
 
