@@ -661,6 +661,28 @@
 
 		\subsubsection{Registro de entrada paralelo, salida serie}
 
+			La entrada de datos se realiza en paralelo, añadiendo lógica adicional y 
+			una entrada que indica al circuito si tiene que cargar el registro o desplazar 
+			la información hacia la salida. Véase figura \ref{paralelo_serie}.
+
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[width=0.8\textwidth]{resources/paralelo_serie.png}
+				\caption{Registro de entrada paralelo, salida serie}
+				\label{paralelo_serie}
+			\end{figure}
+
+			Otra posible implementación utiliza biestables de tipo RS y multiplexores de 
+			dos entradas y una salida para construir un registro de 3 bits
+
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[width=0.8\textwidth]{resources/paralelo_serie2.png}
+				\caption{Registro de entrada paralelo, salida serie con biestables RS y multiplexores}
+				\label{paralelo_serie2}
+			\end{figure}
+
+
 		\subsubsection{Registro de entrada paralelo, salida paralelo}
 
 		\subsubsection{Registro universal}
