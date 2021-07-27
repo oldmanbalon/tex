@@ -34,30 +34,15 @@
 
 \section{Introducción}\label{introduccion}
 
-    Generalmente, se considera a alguien un experto en un problema cuando éste tiene
-    conocimiento especializado sobre dicho problema, o en otras palabras, tiene dominio 
-    sobre éste.  También en el área de la inteligencia artificial se conoce como 
-    sistemas expertos a aquellos con conocimiento especializado sobre dicho problema, así 
-    como conocimiento sobre el dominio.
+    Generalmente, se considera a alguien un experto en un problema cuando éste tiene conocimiento especializado sobre dicho problema, o en otras palabras, tiene dominio sobre éste.  También en el área de la inteligencia artificial se conoce como sistemas expertos a aquellos con conocimiento especializado sobre dicho problema, así como conocimiento sobre el dominio.
 
-    Los sistemas expertos buscan la emulación o imitación del razonamiento humano, 
-    restringiéndose a un espacio de conocimiento limitado, razonando como lo harían
-    --siguiendo una serie de pasos pertinentes-- un experto humano de diversas materias 
-    o disciplinas, como médico, analista, empresario, etc. Su uso será rápidamente en el 
-    futuro debido principalmente a su uso en industria y medicina, principalmente.
+    Los sistemas expertos buscan la emulación o imitación del razonamiento humano, restringiéndose a un espacio de conocimiento limitado, razonando como lo harían --siguiendo una serie de pasos pertinentes-- un experto humano de diversas materias o disciplinas, como médico, analista, empresario, etc. Su uso será rápidamente en el futuro debido principalmente a su uso en industria y medicina, principalmente.
 
-    La lógica difusa proporciona una serie de mecanismos de inferencia que permite simular 
-    procesos de razonamiento humano, al igual que un sistema experto (lo que permite su 
-    fácil adopción y aplicación en éste). La lógica difusa proporciona un marco matemático 
-    que permite modelar la incertidumbre de los procesos cognitivos [evidentemente humanos]
-    de forma que puedan ser computazionables.
+    La lógica difusa proporciona una serie de mecanismos de inferencia que permite simular procesos de razonamiento humano, al igual que un sistema experto (lo que permite su fácil adopción y aplicación en éste). La lógica difusa proporciona un marco matemático que permite modelar la incertidumbre de los procesos cognitivos [evidentemente humanos] de forma que puedan ser computazionables.
 
 \section{Sistemas expertos}
 
-    Como ya hemos adelantado en la introducción (véase sección \ref{introduccion}), un sistema 
-    experto es un software que imita el comportamiento de un experto en la solución de un problema, 
-    generalmente en un campo o disciplina concreta, aplicando deducción lógica y una serie de 
-    pasos en la solución de éste.
+    Como ya hemos adelantado en la introducción (véase sección \ref{introduccion}), un sistema experto es un software que imita el comportamiento de un experto en la solución de un problema, generalmente en un campo o disciplina concreta, aplicando deducción lógica y una serie de pasos en la solución de éste.
 
     Un sistema experto trae consigo determinadas limitaciones a tener en cuenta:
     
@@ -67,8 +52,7 @@
         \item Tienen una noción limitada a su campo y acerca del contexto del problema.
     \end{itemize}
 
-    Aun así presentando una serie de ventajas con respecto a los sistemas tradicionales de 
-    resolución de problemas basados en algoritmos:
+    Aun así presentando una serie de ventajas con respecto a los sistemas tradicionales de resolución de problemas basados en algoritmos:
 
     \begin{itemize}
         \item Presentan capacidad de toma de decisiones.
@@ -92,32 +76,17 @@
         Un sistema experto se compone de los siguientes elementos constituyentes:
 
         \begin{itemize}
-            \item \textbf{Base de conocimiento}. Contiene el conocimiento sobre el 
-            dominio, que se obtiene del conocimiento del experto y se codifican en ésta.
-            La forma más clásica de representación del conocimiento son las reglas\footnote{
-                Una regla es una estructura condicional que relaciona lógicamente la 
-                información contenida en parte del antecedente con otra información 
-                contenida en la parte del consecuente.
+            \item \textbf{Base de conocimiento}. Contiene el conocimiento sobre el dominio, que se obtiene del conocimiento del experto y se codifican en ésta. La forma más clásica de representación del conocimiento son las reglas\footnote{
+                Una regla es una estructura condicional que relaciona lógicamente la información contenida en parte del antecedente con otra información contenida en la parte del consecuente.
             }.
-            \item \textbf{Base de hechos} o memoria de trabajo. Contiene los hechos sobre 
-            un problema ya descubierto previamente, que se introduce en la base de hechos 
-            durante una consulta con el sistema experto. El sistema empareja esta información  
-            con el conocimiento disponible en la base de conocimientos para deducir nuevos 
-            hechos.
-            \item \textbf{Motor de inferencia}. El razonamiento humano es modelado como proceso 
-            con un módulo como el motor de inferencia, que trabaja con la información contenida 
-            en la base de hechos para deducir nuevos hechos y contrastando hechos particulares 
-            de la base de conocimientos para obtener conclusiones acerca del problema.
-            \item \textbf{Interfaz de usuario}. La interfaz que comunica al software con el usuario, 
-            generalmente en lenguaje natural, buscando ser interactiva e imitando la conversación
-            entre humanos.
+            \item \textbf{Base de hechos} o memoria de trabajo. Contiene los hechos sobre un problema ya descubierto previamente, que se introduce en la base de hechos durante una consulta con el sistema experto. El sistema empareja esta información con el conocimiento disponible en la base de conocimientos para deducir nuevos hechos.
+            \item \textbf{Motor de inferencia}. El razonamiento humano es modelado como proceso con un módulo como el motor de inferencia, que trabaja con la información contenida en la base de hechos para deducir nuevos hechos y contrastando hechos particulares de la base de conocimientos para obtener conclusiones acerca del problema.
+            \item \textbf{Interfaz de usuario}. La interfaz que comunica al software con el usuario, generalmente en lenguaje natural, buscando ser interactiva e imitando la conversación entre humanos.
         \end{itemize}
         
 \section{Lógica difusa}
 
-    Como ya hemos adelantado en la introducción (véase sección \ref{introduccion}), la lógica difusa, 
-    también conocida como lógica borrosa, se basa en lo relativo de lo observado como posición 
-    diferencial. Toma dos valores aleatorios, pero contextualizados y referidos entre sí.
+    Como ya hemos adelantado en la introducción (véase sección \ref{introduccion}), la lógica difusa, también conocida como lógica borrosa, se basa en lo relativo de lo observado como posición diferencial. Toma dos valores aleatorios, pero contextualizados y referidos entre sí.
 
     Trae una serie de ventajas tales como:
 
@@ -132,8 +101,7 @@
     \begin{figure}[htp]
         \centering
         \includegraphics[width=0.7\textwidth]{resources/logicadifusa2.jpg}
-        \caption{Diferenciación gráfica de la lógica difusa con respecto a la lógica clásica en el 
-        caso borroso de la definición de \textit{altura}}
+        \caption{Diferenciación gráfica de la lógica difusa con respecto a la lógica clásica en el caso borroso de la definición de \textit{altura}}
         \label{logicadifusa2}
     \end{figure}
 
@@ -158,55 +126,28 @@
         Un sistema basado en lógica difusa se compone de los siguientes elementos constitutivos:
 
         \begin{itemize}
-            \item \textbf{Fusificador} o difusor. El ingreso del bloque difusor está constituido por los 
-            datos de las variables de interés para el estudio. El proceso, conformado por 
-            los grados de pertenencia de estas variables de entrada, implica conocer y/o 
-            asumir las respectivas funciones de pertenencia.
+            \item \textbf{Fusificador} o difusor. El ingreso del bloque difusor está constituido por los datos de las variables de interés para el estudio. El proceso, conformado por los grados de pertenencia de estas variables de entrada, implica conocer y/o asumir las respectivas funciones de pertenencia.
             \item \textbf{Motor de inferencia}. Inferir consiste en obtener una conclusión 
-            o deducir algo de otra cosa, estando relacionado con la implicación, entendida como 
-            repercusión o consecuencia. En términos proposicionales se escribe para para indicar 
-            que el cumplimiento de una proposición tiene como consecuencia el cumplimiento de otra.
+            o deducir algo de otra cosa, estando relacionado con la implicación, entendida como repercusión o consecuencia. En términos proposicionales se escribe para para indicar que el cumplimiento de una proposición tiene como consecuencia el cumplimiento de otra.
             Se expresa como el condicional \textit{if} (si... entonces...).
-            \item \textbf{Desfusificador}. La salida del bloque de inferencia continúa siendo difuso,
-            pero ya relacionado con la variable de entrada. Debe expresarse en resultados concretos.
+            \item \textbf{Desfusificador}. La salida del bloque de inferencia continúa siendo difuso, pero ya relacionado con la variable de entrada. Debe expresarse en resultados concretos.
         \end{itemize}
 
     \subsection{Funcionamiento matemático}
 
-        La lógica difusa define el grado de pertenencia que tiene un 
-        objeto a una clase particular. Este grado de pertenencia es un valor entre cero y uno que 
-        indica la adherencia de un grupo a otro\footnote{
+        La lógica difusa define el grado de pertenencia que tiene un objeto a una clase particular. Este grado de pertenencia es un valor entre cero y uno que indica la adherencia de un grupo a otro\footnote{
             Zadeh, 1965
-        }. Los conjuntos difusos son una extensión 
-        de los conjuntos clásicos, donde se añade una función de pertenencia, es decir, que a cada 
-        elemento del universo se le asocia un grado de pertenencia, definido como un número real entre 
-        0 y 1\footnote{
+        }. Los conjuntos difusos son una extensión de los conjuntos clásicos, donde se añade una función de pertenencia, es decir, que a cada elemento del universo se le asocia un grado de pertenencia, definido como un número real entre 0 y 1\footnote{
             Johansson,1993
-        }. Mientras el grado de pertenencia sea más cercano a 1, significa que el 
-        elemento pertenece en un mayor grado a dicho conjunto. Caso contrario ocurre si el valor se 
-        acerca a 0. Así es, cómo se introduce el concepto de conjunto o subconjunto difuso y se lo 
-        asocia a un determinado valor lingüístico, definido por una palabra o etiqueta lingüística, 
-        donde está el nombre del conjunto o subconjunto. 
+        }. Mientras el grado de pertenencia sea más cercano a 1, significa que el elemento pertenece en un mayor grado a dicho conjunto. Caso contrario ocurre si el valor se acerca a 0. Así es, cómo se introduce el concepto de conjunto o subconjunto difuso y se lo asocia a un determinado valor lingüístico, definido por una palabra o etiqueta lingüística, donde está el nombre del conjunto o subconjunto. 
         
-        Por cada conjunto se define una función de 
-        pertenencia o membresía denominada $\mu A(x)$, que indica el grado en que la variable x está incluida 
-        en el concepto representado por la etiqueta $A (0 \leq \mu A(x) \leq 1)$. 
+        Por cada conjunto se define una función de pertenencia o membresía denominada $\mu A(x)$, que indica el grado en que la variable x está incluida en el concepto representado por la etiqueta $A (0 \leq \mu A(x) \leq 1)$. 
 
-        El concepto de lógica difusa define la base de reglas como la manera que tiene un sistema difuso 
-        de guardar el conocimiento lingüístico, el cual le permite resolver el problema para el cual ha 
-        sido diseñado. Estas reglas son del tipo “Si-Entonces” y asocian uno o más conjuntos difusos de 
-        entrada llamados antecedentes con un conjunto difuso de salida llamado consecuente. Para el caso 
-        del modelo propuesto, se asocian los conjuntos de entrada con el operador lógico \textit{AND} para tener 
-        un conjunto de salida o consecuente\footnote{
+        El concepto de lógica difusa define la base de reglas como la manera que tiene un sistema difuso de guardar el conocimiento lingüístico, el cual le permite resolver el problema para el cual ha sido diseñado. Estas reglas son del tipo “Si-Entonces” y asocian uno o más conjuntos difusos de entrada llamados antecedentes con un conjunto difuso de salida llamado consecuente. Para el caso del modelo propuesto, se asocian los conjuntos de entrada con el operador lógico \textit{AND} para tener un conjunto de salida o consecuente\footnote{
             De Negri y De vito, 2006
         }.
 
-        Una vez establecida la base de reglas para cada una de las fases del sistema experto difuso, 
-        es necesario, como ya vimos anteriormente en la arquitectura de ésta, definir el método de 
-        inferencia y agregación que determinan la salida o respuesta del sistema. Mediante el proceso de 
-        inferencia, se obtiene el conjunto difuso de salida. Este conjunto es calculado de acuerdo a las
-        reglas establecidas y al método de inferencia utilizado. Generalmente, se emplea el método de 
-        inferencia por mínimos (Min) de Mamdami definido según la ecuación\footnote{
+        Una vez establecida la base de reglas para cada una de las fases del sistema experto difuso, es necesario, como ya vimos anteriormente en la arquitectura de ésta, definir el método de inferencia y agregación que determinan la salida o respuesta del sistema. Mediante el proceso de inferencia, se obtiene el conjunto difuso de salida. Este conjunto es calculado de acuerdo a las reglas establecidas y al método de inferencia utilizado. Generalmente, se emplea el método de inferencia por mínimos (Min) de Mamdami definido según la ecuación\footnote{
             Zadeh, 1965
         }:
 
@@ -216,72 +157,42 @@
 
         Donde $\mu_w$ es la función de pertenencia del conjunto de salida $w$.
 
-        El método de agregado agrupa todos los conjuntos de salida, de cada una de las reglas establecidas, 
-        para obtener un único conjunto difuso. Para el modelo experto difuso propuesto, se utiliza el método 
-        de agregación por máximos (Max), descrito por la ecuación:
+        El método de agregado agrupa todos los conjuntos de salida, de cada una de las reglas establecidas, para obtener un único conjunto difuso. Para el modelo experto difuso propuesto, se utiliza el método de agregación por máximos (Max), descrito por la ecuación:
         
         \[
             C' = [(z, \mu_C' (z) / z \in Z)]    
         \]
 
-        Que agrupa los máximos valores, de cada regla asignada, que han sido obtenidos mediante el proceso 
-        de inferencia difuso. Y donde $Z$ es igual al universo del discurso de la variable de salida y:
+        Que agrupa los máximos valores, de cada regla asignada, que han sido obtenidos mediante el proceso de inferencia difuso. Y donde $Z$ es igual al universo del discurso de la variable de salida y:
         
         \[
             \mu_C' (z) = Max(C1', C2',... Cn')    
         \]
 
-        Finalmente, el proceso de defusificación consiste en un proceso matemático usado para convertir 
-        un conjunto difuso en un número real\footnote{
+        Finalmente, el proceso de defusificación consiste en un proceso matemático usado para convertir un conjunto difuso en un número real\footnote{
             Llano et. al., 2007
-        }. El conjunto que se ha obtenido del proceso de inferencia y agregación, debe ser transformado 
-        en un valor numérico que pueda ser interpretado por elementos externos. Con el fin de determinar 
-        qué método de defusificación se emplearía en el modelo, se realizó un análisis previo, utilizando
-        un conjunto menor de datos. El resultado de este análisis arrojó que el método del centroide de 
+        }. El conjunto que se ha obtenido del proceso de inferencia y agregación, debe ser transformado en un valor numérico que pueda ser interpretado por elementos externos. Con el fin de determinar qué método de defusificación se emplearía en el modelo, se realizó un análisis previo, utilizando un conjunto menor de datos. El resultado de este análisis arrojó que el método del centroide de 
         área posee un error porcentual más bajo.
 
-        En este método, el centro de gravedad es aproximado por el centro de gravedad de un arreglo de 
-        masas puntuales, las cuales son el centro de gravedad de cada conjunto de salida correspondiente 
-        a cada regla, con masa igual al grado de pertenencia en ese punto de su centro de gravedad. Si 
-        se le llama $\varphi 1$ al centro de gravedad del conjunto difuso de salida $Bl$ de la $l$-ésima regla, el 
-        centro de gravedad queda determinado por la ecuación:
+        En este método, el centro de gravedad es aproximado por el centro de gravedad de un arreglo de masas puntuales, las cuales son el centro de gravedad de cada conjunto de salida correspondiente a cada regla, con masa igual al grado de pertenencia en ese punto de su centro de gravedad. Si se le llama $\varphi 1$ al centro de gravedad del conjunto difuso de salida $Bl$ de la $l$-ésima regla, el centro de gravedad queda determinado por la ecuación:
 
         \[
             \mu_d=\frac{\displaystyle\sum_{l=1}^{R} \varphi_1 {{\mu_B}_l(\varphi l)}}{\displaystyle\sum_{l=1}^{R}{{\mu_B}_l(\varphi l)}}
         \]
 
-        Siendo $R$ es el número de reglas. Las reglas que rigen la base de conocimiento corresponden a 
-        afirmaciones lógicas que relacionan dos o más objetos e incluyen dos partes, la premisa y la 
-        conclusión. Cada una de estas partes consiste en una expresión lógica del tipo <<Si- entonces>>, 
-        con una o más afirmaciones objeto-valor conectadas mediante los operadores lógicos ‘y’, ‘o’, ó 
-        ‘no’. 
+        Siendo $R$ es el número de reglas. Las reglas que rigen la base de conocimiento corresponden a afirmaciones lógicas que relacionan dos o más objetos e incluyen dos partes, la premisa y la conclusión. Cada una de estas partes consiste en una expresión lógica del tipo <<Si- entonces>>, con una o más afirmaciones objeto-valor conectadas mediante los operadores lógicos ‘y’, ‘o’, ó ‘no’. 
 
 \section{Combinación entre sistemas}\label{combinacion}
 
-    Como ya se ha ido prefigurando en secciones anteriores, tanto los sistemas expertos como la lógica 
-    difusa buscan la imitación y emulación del comportamiento racional humano para llevar a cabo sus 
-    operaciones y funciones. Lo que significa que no debería haber problema a la hora de unificar ambos 
-    conceptos, para funcionar conjuntamente en determinadas tareas específicas de un campo (sistema 
-    experto) donde los límites entre valores se encuentran borrosos (lógica difusa).
+    Como ya se ha ido prefigurando en secciones anteriores, tanto los sistemas expertos como la lógica difusa buscan la imitación y emulación del comportamiento racional humano para llevar a cabo sus operaciones y funciones. Lo que significa que no debería haber problema a la hora de unificar ambos conceptos, para funcionar conjuntamente en determinadas tareas específicas de un campo (sistema experto) donde los límites entre valores se encuentran borrosos (lógica difusa).
 
-    Para la unificación de ambos conceptos será necesario unir criterios en el diseño y desarrollo del 
-    sistema. En la figura \ref{diagramaflujoexperto} podemos observar el resultado de esta unificación; 
-    que da lugar a un diagrama de flujo con los pasos a seguir. 
+    Para la unificación de ambos conceptos será necesario unir criterios en el diseño y desarrollo del sistema. En la figura \ref{diagramaflujoexperto} podemos observar el resultado de esta unificación; que da lugar a un diagrama de flujo con los pasos a seguir. 
 
-    Tal y como se haría con un sistema experto simple, comenzaríamos con la entrevista con el experto y 
-    la recopilación de datos. 
+    Tal y como se haría con un sistema experto simple, comenzaríamos con la entrevista con el experto y la recopilación de datos. 
 
-    Por otro lado, será necesario realizar una identificación y categorización de las variables de entrada 
-    y de salida, y tal como lo define el concepto 
-    de la lógica difusa, es necesario definir cada uno de los parámetros, rangos y funciones de 
-    pertenencia que modelarán el proceso que queremos simular. Mediante la tabulación del total de datos 
-    obtenidos, se determinan los rangos mínimos y máximos de los conjuntos que conforman cada 
-    variable seleccionada.
+    Por otro lado, será necesario realizar una identificación y categorización de las variables de entrada y de salida, y tal como lo define el concepto de la lógica difusa, es necesario definir cada uno de los parámetros, rangos y funciones de pertenencia que modelarán el proceso que queremos simular. Mediante la tabulación del total de datos obtenidos, se determinan los rangos mínimos y máximos de los conjuntos que conforman cada variable seleccionada.
 
-    A partir de un análisis gráfico de la agrupación de los datos tabulados, se determinan tanto los 
-    rangos de los subconjuntos difusos, como también las funciones de pertenencia. Cada una de 
-    estas funciones debe llevar su respectiva etiqueta lingüística, que cuantifican el valor de dicha 
-    función a partir del uso del lenguaje natural o coloquial. 
+    A partir de un análisis gráfico de la agrupación de los datos tabulados, se determinan tanto los rangos de los subconjuntos difusos, como también las funciones de pertenencia. Cada una de estas funciones debe llevar su respectiva etiqueta lingüística, que cuantifican el valor de dicha función a partir del uso del lenguaje natural o coloquial. 
 
     \begin{figure}[htp]
         \centering
@@ -290,53 +201,32 @@
         \label{diagramaflujoexperto}
     \end{figure}
 
-    Estos datos confluirán en la construcción de reglas (base de conocimiento) y una memoria de trabajo 
-    (base de hechos), propios del sistema experto base. También contará con un motor de inferencia, común 
-    en ambas lógicas o sistemas; para finalmente, terminar el proceso con la desfusificación y la comunicación 
-    al usuario mediante lenguaje natural.
+    Estos datos confluirán en la construcción de reglas (base de conocimiento) y una memoria de trabajo (base de hechos), propios del sistema experto base. También contará con un motor de inferencia, común en ambas lógicas o sistemas; para finalmente, terminar el proceso con la desfusificación y la comunicación al usuario mediante lenguaje natural.
     
     \subsection{Caso práctico}\label{casopractico}
 
-        Como caso práctico de un sistema combinado, siendo un sistema experto que emplea lógica difusa he 
-        decidido desarrollar, de forma conceptual, una simple implementación de diagnóstico médico, que 
-        recibiendo una serie de síntomas entrega un posible diagnóstico en base a su conocimiento previo, al igual 
-        que como lo haria un experto médico.
+        Como caso práctico de un sistema combinado, siendo un sistema experto que emplea lógica difusa he decidido desarrollar, de forma conceptual, una simple implementación de diagnóstico médico, que recibiendo una serie de síntomas entrega un posible diagnóstico en base a su conocimiento previo, al igual que como lo haria un experto médico.
 
-        El primer paso según hemos documentado en la sección \ref{combinacion} será la entrevista con el 
-        experto [médico, en este caso] para obtener una base de conocimiento. Esta conformará una serie de 
-        funciones que representan las distintas enfermedades. Cada función almacenará una serie de preguntas 
-        o valoraciones a respuestas del usuario. La recopilación de datos se hará directamente recibiendo los 
-        valores de respuesta del usuario.
+        El primer paso según hemos documentado en la sección \ref{combinacion} será la entrevista con el experto [médico, en este caso] para obtener una base de conocimiento. Esta conformará una serie de funciones que representan las distintas enfermedades. Cada función almacenará una serie de preguntas o valoraciones a respuestas del usuario. La recopilación de datos se hará directamente recibiendo los valores de respuesta del usuario.
 
-        Por ejemplo, podríamos concluir en la creación de dos variables de entrada a partir de los datos 
-        ofrecidos por el experto para configurar los conjuntos difusos. Serían:
+        Por ejemplo, podríamos concluir en la creación de dos variables de entrada a partir de los datos ofrecidos por el experto para configurar los conjuntos difusos. Serían:
 
         \subsubsection{Frecuencia cardíaca} 
         
-        La frecuencia cardíaca, es decir, el número de latidos del corazón 
-        en un minuto. La fórmula que con más frecuencia se utiliza para establecer la frecuencia cardíaca 
-        máxima de un sujeto es la \textit{fórmula de Astrand}\footnote{
-            La \textit{fórmula de Astrand} se basa en restar la edad del sujeto a 220. Por ejemplo, un 
-            paciente de 40 años debería tener una frecuencia cardíaca máxima de 180 latidos por minuto.
+        La frecuencia cardíaca, es decir, el número de latidos del corazón en un minuto. La fórmula que con más frecuencia se utiliza para establecer la frecuencia cardíaca máxima de un sujeto es la \textit{fórmula de Astrand}\footnote{
+            La \textit{fórmula de Astrand} se basa en restar la edad del sujeto a 220. Por ejemplo, un paciente de 40 años debería tener una frecuencia cardíaca máxima de 180 latidos por minuto.
 
-            Sin embargo, la primera referencia documentada contra la fórmula data de 1971 por parte de 
-            \textit{S.M. Fox III}, que realizó un estudio que concluyó que la fórmula $220-e$, donde $e$ 
-            corresponde a la edad del sujeto podría definir una línea <<no demasiado lejana>> a los datos 
-            recogidos, reconociendo la inexactitud de la fórmula universalmente usada hasta entonces. 
+            Sin embargo, la primera referencia documentada contra la fórmula data de 1971 por parte de \textit{S.M. Fox III}, que realizó un estudio que concluyó que la fórmula $220-e$, donde $e$ corresponde a la edad del sujeto podría definir una línea <<no demasiado lejana>> a los datos recogidos, reconociendo la inexactitud de la fórmula universalmente usada hasta entonces. 
             
-            El rango que se empleó para la frecuencia cardiaca fue de 40 a 150 latidos  
-            por minuto teniendo en cuenta un rango bajo y alto, lo que daría lugar a un escenario ideal para el 
-            uso de lógica difusa.
+            El rango que se empleó para la frecuencia cardiaca fue de 40 a 150 latidos por minuto teniendo en cuenta un rango bajo y alto, lo que daría lugar a un escenario ideal para el uso de lógica difusa.
         }.
 
-        Los conjuntos o números difusos utilizados para la variablede entrada serían dos: bajo, de tipo $Z$ y 
-        alto, de tipo $S$. 
+        Los conjuntos o números difusos utilizados para la variablede entrada serían dos: bajo, de tipo $Z$ y alto, de tipo $S$. 
 
         Todas las variables de entrada, se analizarán por el difusor Singleton\footnote{
             Singleton o instancia única es un patrón de diseño que permite restringir la creación de objetos 
             pertenecientes a una clase o el valor de un tipo a un único objeto.
-        } con un punto de evaluación por 
-        simplicidad y rapidez de cálculo.
+        } con un punto de evaluación por simplicidad y rapidez de cálculo.
 
         \begin{figure}[htp]
             \centering
@@ -347,18 +237,13 @@
     
         \subsubsection{Frecuencia respiratoria} 
         
-        La frecuencia respiratorio corresponde al número de veces que 
-        un sujeto respira por minuto. La frecuencia normal es de 12/14 a 20/22. 
+        La frecuencia respiratorio corresponde al número de veces que un sujeto respira por minuto. La frecuencia normal es de 12/14 a 20/22. 
         
-        La determinación de la frecuencia respiratoria consiste  en  precisar  la  cantidad  de  ciclos 
-        respiratorios  que  se producen  en  el  término  de  un  minuto,  observando  el  tórax  de  la  
-        persona  para apreciar la profundidad de sus movimientos\footnote{
-            Para controlar la respiración, se debe contar  los  movimientos  respiratorios  (inspiración  y  
-            espiración)  como  una  sola respiración.
+        La determinación de la frecuencia respiratoria consiste  en  precisar  la  cantidad  de  ciclos respiratorios que se producen en el término de un minuto, observando el tórax de la persona  para apreciar la profundidad de sus movimientos\footnote{
+            Para controlar la respiración, se debe contar  los  movimientos  respiratorios  (inspiración y espiración)  como  una  sola respiración.
         }.
 
-        Los conjuntos o números difusos utilizados para la variablede entrada serían dos: bajo, de tipo $Z$ y 
-        alto, de tipo $S$. Todas las variables de entrada, se analizarán por el difusor Singleton.
+        Los conjuntos o números difusos utilizados para la variablede entrada serían dos: bajo, de tipo $Z$ y alto, de tipo $S$. Todas las variables de entrada, se analizarán por el difusor Singleton.
 
         \begin{figure}[htp]
             \centering
@@ -367,45 +252,24 @@
             \label{frecuenciarespiratoria}
         \end{figure}
 
-        La fusificación en este caso será directa, es decir, caad síntoma tiene un valor de pertenencia difusa
-        independientemente de si lo posee <<mucho>> o no. Esto se ha realizado así para simplificar el concepto 
-        a tratar. Si lo posee, indicará el grado de pertenencia a la enfermedad; si no, será 0. Estas variables 
-        son asignadas en cada función de la base de conocimiento.
+        La fusificación en este caso será directa, es decir, caad síntoma tiene un valor de pertenencia difusa independientemente de si lo posee <<mucho>> o no. Esto se ha realizado así para simplificar el concepto a tratar. Si lo posee, indicará el grado de pertenencia a la enfermedad; si no, será 0. Estas variables son asignadas en cada función de la base de conocimiento.
 
-        Así como un sistema experto sencillo, también podemos modelar uno usando la teoría de lógica difusa; 
-        la lógica difusa se encarga de dar valores diferentes de 0 ó 1 a un conjunto dado, como se muestra 
-        en las funciones anteriores.
+        Así como un sistema experto sencillo, también podemos modelar uno usando la teoría de lógica difusa; la lógica difusa se encarga de dar valores diferentes de 0 ó 1 a un conjunto dado, como se muestra en las funciones anteriores.
 
-        En el problema presente se tienen un grupo de enfermedades y un grupo de síntomas; a cada síntoma 
-        se le da un grado de pertenencia a cierta enfermedad, por ejemplo la perdida de equilibrio pertenece 
-        en 0.2 al grupo de la enfermedad colesterol, así sucesivamente se van asignando las pertenencias de
-        cada síntoma a cada enfermedad y sencillamente realizamos un cálculo de probabilidad para realizar 
-        la inferencia del sistema experto.
+        En el problema presente se tienen un grupo de enfermedades y un grupo de síntomas; a cada síntoma se le da un grado de pertenencia a cierta enfermedad, por ejemplo la perdida de equilibrio pertenece en 0.2 al grupo de la enfermedad colesterol, así sucesivamente se van asignando las pertenencias decada síntoma a cada enfermedad y sencillamente realizamos un cálculo de probabilidad para realizar la inferencia del sistema experto.
 
-        Para la inferencia el sistema experto difuso utilizará los valores de pertenencia de cada síntoma 
-        a cada  enfermedad; multiplicando la entrada 1 ó 0 por el valor de pertenencia del síntoma. De tal 
-        forma que aseguramos que el sistema no tenga en cuenta el síntoma en caso de no poseerlo el paciente.  
+        Para la inferencia el sistema experto difuso utilizará los valores de pertenencia de cada síntoma a cada  enfermedad; multiplicando la entrada 1 ó 0 por el valor de pertenencia del síntoma. De tal forma que aseguramos que el sistema no tenga en cuenta el síntoma en caso de no poseerlo el paciente.  
 
-        Debido a que la lógica borrosa maneja valores probabilísticos entre 0 y 1, es necesario asegurar que el valor 
-        final no sobrepase 1. 
+        Debido a que la lógica borrosa maneja valores probabilísticos entre 0 y 1, es necesario asegurar que el valor final no sobrepase 1. 
 
 \section{Conclusiones}
 
-    Como hemos podido comprobar a lo largo del documento, a diferencia de un sistema experto convencional, uno 
-    combinado con la lógica borrosa presenta una serie de ventajas aplicable a una gran multitud de disciplinas 
-    y dominios, de entre ellos el diagnóstico médico como hemos observado conceptualmente en el caso práctico 
+    Como hemos podido comprobar a lo largo del documento, a diferencia de un sistema experto convencional, uno combinado con la lógica borrosa presenta una serie de ventajas aplicable a una gran multitud de disciplinas y dominios, de entre ellos el diagnóstico médico como hemos observado conceptualmente en el caso práctico 
     (véase sección \ref{casopractico}).
 
-    En un sistema experto, los elementos serían descartados a medida se introdujeran los datos de entrada [no 
-    se padecía un síntoma]. Sin embargo, en un sistema experto difuso, no existe descarte sino que calcula 
-    la probabilidad en base a los datos de entrada, sin descartar [probabilidad de padecer una enfermedad], dando 
-    así una expectativa para cada elemento [enfermdad] de la base de conocimiento.
+    En un sistema experto, los elementos serían descartados a medida se introdujeran los datos de entrada [no se padecía un síntoma]. Sin embargo, en un sistema experto difuso, no existe descarte sino que calcula la probabilidad en base a los datos de entrada, sin descartar [probabilidad de padecer una enfermedad], dando así una expectativa para cada elemento [enfermdad] de la base de conocimiento.
     
-    Los sistemas expertos han permitido revolucionar diferentes áreas del conocimiento  (industria, militar, informática,
-    medicina). Si a éstos les sumamos o combinamos la aplicación de sistemas difusos se hace mucho más exacta la 
-    inferencia, ya que no solo diagnosticaría la presencia del dato [enfermedad] o no, sino que calcula la probabilidad 
-    para cada uno de ellos, ofreciendo precisión para casos en los cuales necesitemos un valor exacto.
-
+    Los sistemas expertos han permitido revolucionar diferentes áreas del conocimiento  (industria, militar, informática, medicina). Si a éstos les sumamos o combinamos la aplicación de sistemas difusos se hace mucho más exacta la inferencia, ya que no solo diagnosticaría la presencia del dato [enfermedad] o no, sino que calcula la probabilidad para cada uno de ellos, ofreciendo precisión para casos en los cuales necesitemos un valor exacto.
 
 % BIBLIOGRAFÍA Y REFERENCIAS
 \newpage
