@@ -26,60 +26,48 @@
 
 \section{Álgebra de Boole y puertas lógicas}
 
-    El matemático y filósofo George Boole enunció una teoría matemática que permitía, de forma 
-    algebráica, representar y operar con lógica preposicional. Una de sus características más 
-    importantes es que las variables sólo podían tener dos valores: verdadero y falso. A esta 
-    teoría se le conoce como Álgebra de Boole.
+    El matemático y filósofo George Boole enunció una teoría matemática que permitía, de forma algebráica, representar y operar con lógica preposicional. Una de sus características más importantes es que las variables sólo podían tener dos valores: verdadero y falso. A esta teoría se le conoce como Álgebra de Boole.
 
-    Posteriormente, Claude E. Shannon, ingeniero electrónico, llega a la conclusión de que 
-    es posible aplicar el Álgebra de Boole para el diseño, estudio y simplificación de circuitos 
-    digitales. Uno de los factores que lo permiten son la simplificación a dos los valores de 
-    las variables.
+    Posteriormente, Claude E. Shannon, ingeniero electrónico, llega a la conclusión de que es posible aplicar el Álgebra de Boole para el diseño, estudio y simplificación de circuitos digitales. Uno de los factores que lo permiten son la simplificación a dos los valores de las variables.
 
     El Álgebra de Boole queda definida, pues, por las siguientes reglas:
 
     \begin{itemize}
-        \item Las variables sólo tienen dos posibles valores: 0 ó 1, es decir, utilizamos el 
-        sistema de numeración binario.
+        \item Las variables sólo tienen dos posibles valores: 0 ó 1, es decir, utilizamos el sistema de numeración binario.
         \item Operación de complementación o función NOT.
         \item Operación de suma lógica o función OR.
         \item Operación de producto lógico o función AND.
         \item Por convenio, el producto lógico es precedente a la suma lógica.
     \end{itemize}
 
-    Estas operaciones algebráicas se implementan en los circuitos digitales mediante \textbf{puertas 
-    lógicas}. Cada operación tiene asignada una puerta lógica.
+    Estas operaciones algebráicas se implementan en los circuitos digitales mediante \textbf{puertas lógicas}. Cada operación tiene asignada una puerta lógica.
 
     % TODO: poner gráfica con la representación de las puertas lógicas.
 
-    Para representar los posibles resultados de la función lógica en función de las entradas se 
-    utilizan las \textbf{tablas de verdad}. Ésta consta de una serie de columnas que representan 
-    las variables de entrada y de salida, representando todas las combinaciones posibles de entradas.
+    Para representar los posibles resultados de la función lógica en función de las entradas se utilizan las \textbf{tablas de verdad}. Ésta consta de una serie de columnas que representan las variables de entrada y de salida, representando todas las combinaciones posibles de entradas.
 
     \begin{figure}[htp]
       \centering
       \includegraphics[width=1\textwidth]{resources/boole-or.png}
-      \caption{Representación gráfica y tabla de verdad de la puerta lógica OR.}
+      \caption{Representación gráfica y tabla de verdad de la puerta lógica OR}
       \label{boole-or}
     \end{figure}
 
     \begin{figure}[htp]
       \centering
       \includegraphics[width=1\textwidth]{resources/boole-and.png}
-      \caption{Representación gráfica y tabla de verdad de la puerta lógica AND.}
+      \caption{Representación gráfica y tabla de verdad de la puerta lógica AND}
       \label{boole-and}
     \end{figure}
 
     \begin{figure}[htp]
       \centering
       \includegraphics[width=1\textwidth]{resources/boole-not.png}
-      \caption{Representación gráfica y tabla de verdad de la puerta lógica NOT.}
+      \caption{Representación gráfica y tabla de verdad de la puerta lógica NOT}
       \label{boole-not}
     \end{figure}
 
-    Las puertas lógicas OR, AND y NOT son conocidas como funciones básicas (véanse figuras 
-    \ref{boole-or}, \ref{boole-and} y \ref{boole-not}), cuyas operaciones cumplen las siguientes 
-    propiedades:
+    Las puertas lógicas OR, AND y NOT son conocidas como funciones básicas (véanse figuras \ref{boole-or}, \ref{boole-and} y \ref{boole-not}), cuyas operaciones cumplen las siguientes propiedades:
 
     \begin{itemize}
       \item Conmutativa: $x+y=y+x$; $x\cdot y=y\cdot x$
@@ -103,63 +91,50 @@
         \[x\cdot(\overline{x}+y)=xy\]
     \end{itemize}
 
-    Hay otras funciones que pueden realizarse como combinación de las funciones básicas, 
-    siendo muy útiles en el diseño de circuitos digitales. Estas funciones son denominadas
-    \textbf{funciones no básicas} (véanse figuras \ref{boole-nor}, \ref{boole-nand} y 
-    \ref{boole-xor}).
+    Hay otras funciones que pueden realizarse como combinación de las funciones básicas, siendo muy útiles en el diseño de circuitos digitales. Estas funciones son denominadas\textbf{funciones no básicas} (véanse figuras \ref{boole-nor}, \ref{boole-nand} y \ref{boole-xor}).
 
     \begin{figure}[htp]
       \centering
       \includegraphics[width=1\textwidth]{resources/boole-nor.png}
-      \caption{Representación gráfica y tabla de verdad de la puerta lógica NOR.}
+      \caption{Representación gráfica y tabla de verdad de la puerta lógica NOR}
       \label{boole-nor}
     \end{figure}
 
     \begin{figure}[htp]
       \centering
       \includegraphics[width=1\textwidth]{resources/boole-nand.png}
-      \caption{Representación gráfica y tabla de verdad de la puerta lógica NAND.}
+      \caption{Representación gráfica y tabla de verdad de la puerta lógica NAND}
       \label{boole-nand}
     \end{figure}
 
     \begin{figure}[htp]
       \centering
       \includegraphics[width=1\textwidth]{resources/boole-xor.png}
-      \caption{Representación gráfica y tabla de verdad de la puerta lógica XOR.}
+      \caption{Representación gráfica y tabla de verdad de la puerta lógica XOR}
       \label{boole-xor}
     \end{figure}
 
 	\subsection{Forma canónica de las funciones lógicas}
 
-		A partir de una función lógica podemos, mediante operaciones algebráicas, obtener 
-		otras funciones lógicas equivalentes. O lo que es lo mismo, una función lógica puede 
-		expresarse algebráicamente de muchas formas, siendo una de ellas la forma canónica.
+		A partir de una función lógica podemos, mediante operaciones algebráicas, obtener otras funciones lógicas equivalentes. O lo que es lo mismo, una función lógica puede expresarse algebráicamente de muchas formas, siendo una de ellas la forma canónica.
 
 		\subsubsection{Suma de minterms}
 
 			La forma canónica de una función lógica expresada como suma de minterms\footnote{
-				Un \textit{minterm} es un producto de todas las variables (negadas o sin negar)
-				de una función lógica.
+				Un \textit{minterm} es un producto de todas las variables (negadas o sin negar) de una función lógica.
 
-				Para saber si un \textit{minterm} va negado o no debemos observar si la entrada 
-				es 0 ó 1; si es 0 la variable estará negado mientras que si es 1 la variable no 
-				estará negada.
-			} contiene la suma de todas las combinaciones de las entradas de tal forma que 
-			la salida sea igual a 1.
+				Para saber si un \textit{minterm} va negado o no debemos observar si la entrada es 0 ó 1; si es 0 la variable estará negado mientras que si es 1 la variable no estará negada.
+			} contiene la suma de todas las combinaciones de las entradas de tal forma que la salida sea igual a 1.
 
 		\subsubsection{Producto de maxterms}
 
 			La forma canónica de una función lógica expresada como un producto de maxterms\footnote{
-				Un \textit{maxterm} es una suma de todas las variables (negadas o sin negar) 
-				de una función lógica.
-			} contiene el producto de todas las combinaciones de las entradas que van a hacer que 
-			la salida sea 0.
+				Un \textit{maxterm} es una suma de todas las variables (negadas o sin negar) de una función lógica.
+			} contiene el producto de todas las combinaciones de las entradas que van a hacer que la salida sea 0.
 
 	\subsection{Simplificación de funciones lógicas}
 
-		La simplificación consiste en la búsqueda de la función lógica que minimice el uso 
-		de puertas lógicas. Una de las posibilidades consiste en utilizar los teoremas anteriormente 
-		vistos.
+		La simplificación consiste en la búsqueda de la función lógica que minimice el uso de puertas lógicas. Una de las posibilidades consiste en utilizar los teoremas anteriormente vistos.
 
 		Ejemplo:
 		\begin{gather*} 
@@ -173,29 +148,22 @@
 
 		\subsubsection{Homogeneización de puertas}
 
-			Es posible implemnentar cualquier función lógica utilizando únicamente las puertas 
-			NAND y NOR.
+			Es posible implemnentar cualquier función lógica utilizando únicamente las puertas NAND y NOR.
     
 		\subsubsection{Mapas de Karnaugh}
 
-			Los mapas de Karnaugh permiten simplificar funciones lógicas de una forma gráfica, sencilla 
-			y sistemática, representando en una tabla (mapa) con características de la tabla de verdad de 
-			una función. Debe tener las siguientes características:
+			Los mapas de Karnaugh permiten simplificar funciones lógicas de una forma gráfica, sencilla y sistemática, representando en una tabla (mapa) con características de la tabla de verdad de una función. Debe tener las siguientes características:
 
 			\begin{enumerate}
-				\item Las posibles combinaciones de variables de entrada se colocan en filas y columnas. 
-				Entre las combinaciones de entradas de dos filas o dos columnas consecutivas no debe 
-				variar más de un bit.
-				\item En cada celda de la tabla resultante debemos colocar el valor de la función lógica 
-				para la combinación de entradas correspondientes. 
+				\item Las posibles combinaciones de variables de entrada se colocan en filas y columnas. Entre las combinaciones de entradas de dos filas o dos columnas consecutivas no debe variar más de un bit.
+				\item En cada celda de la tabla resultante debemos colocar el valor de la función lógica para la combinación de entradas correspondientes. 
 			\end{enumerate}
 
 \section{Circuitos combinaciones}
 
 	\subsection{Diseño de circuitos combinacionales}
 
-		Los circuitos combinacionales son aquellos en los que las salidas sólo dependen de las entradas del 
-		mismo instante. El proceso de diseñó consta de las siguientes etapas:
+		Los circuitos combinacionales son aquellos en los que las salidas sólo dependen de las entradas del mismo instante. El proceso de diseñó consta de las siguientes etapas:
 
 		\begin{enumerate}
 			\item Construcción de la tabla de verdad para la función lógica que se pretende implementar.
@@ -203,9 +171,7 @@
 			\item Implementación de la función.
 		\end{enumerate}
 
-		Una línea de control permite que, en función del valor de las entradas el circuito se comportará de 
-		una forma u otra. En función del nivel de la señal que se escoja para establecer la activación o no de 
-		un determinado comportamiento, existen dos tipos de líneas de control:
+		Una línea de control permite que, en función del valor de las entradas el circuito se comportará de una forma u otra. En función del nivel de la señal que se escoja para establecer la activación o no de un determinado comportamiento, existen dos tipos de líneas de control:
 
 		\begin{itemize}
 			\item Activas a bajo nivel (cero lógico). El valor de la línea es 0.
@@ -214,10 +180,7 @@
 
 	\subsection{Circuitos airitméticos}
 
-		Las operaciones aritméticas son fundamentales en cualquier computador, siendo parte importante del procesamiento de 
-		la información. Los circuitos que realizan operaciones de este tipo son conocidos como circuitos aritméticos y son 
-		parte fundamental de las unidades aritmético-lógicas, que forman a su vez parte de las CPUs. Estas operaciones se 
-		realizan en binario.
+		Las operaciones aritméticas son fundamentales en cualquier computador, siendo parte importante del procesamiento de la información. Los circuitos que realizan operaciones de este tipo son conocidos como circuitos aritméticos y son parte fundamental de las unidades aritmético-lógicas, que forman a su vez parte de las CPUs. Estas operaciones se realizan en binario.
 
 		\subsubsection{Sumadores}
 
@@ -230,19 +193,12 @@
 
 			En ésta última el resultado es 0 y se produce un acarreo, que posteriormente se procesará, almacenará o desechará.
 
-			\paragraph{Semisumador binario} La función del semisumador es sumar dos bits de entrada ($A$ y 
-			$B$), generar una suma ($S$) y un acarreo de salida ($C_{out}$).
+			\paragraph{Semisumador binario} La función del semisumador es sumar dos bits de entrada ($A$ y $B$), generar una suma ($S$) y un acarreo de salida ($C_{out}$).
 
-			\paragraph{Sumador completo} Un sumador completo tiene tres entradas, siendo la tercera la posibilidad 
-			de sumar una erntrada de acarreo $C_{in}$. Esta entrada adicional permite encadenar varios sumadores, de 
-			tal forma que se implementan sumadores de más de un bit; el acarreo vendría a sumar el bit anterior.
+			\paragraph{Sumador completo} Un sumador completo tiene tres entradas, siendo la tercera la posibilidad de sumar una erntrada de acarreo $C_{in}$. Esta entrada adicional permite encadenar varios sumadores, de tal forma que se implementan sumadores de más de un bit; el acarreo vendría a sumar el bit anterior.
 
-			\paragraph{Sumador de más de un bit} Para implementar la suma de números binarios se requieren tantos 
-			sumadores completos como bits tengan los números que se quieren sumar, ya sea mediante acarreo 
-			serie\footnote{
-				El acarreo resultante de la suma de un bit se utiliza como entrada para el sumador del bit de 
-				orden superior. De tal forma que para calcular la suma del bit de orden $n$ sea necesario completar 
-				la suma de los $n-1$ anteriores bits. 
+			\paragraph{Sumador de más de un bit} Para implementar la suma de números binarios se requieren tantos sumadores completos como bits tengan los números que se quieren sumar, ya sea mediante acarreo serie\footnote{
+				El acarreo resultante de la suma de un bit se utiliza como entrada para el sumador del bit de orden superior. De tal forma que para calcular la suma del bit de orden $n$ sea necesario completar la suma de los $n-1$ anteriores bits. 
 
 				Por eso, estos sumadores son poco escalables, ya que cuantos más bits tengamos, más lento será el sumador.
 			} o acarreo anticipado.
@@ -260,9 +216,7 @@
 
 		\subsubsection{Multiplicaciones y divisiones}
 
-			Antiguamente, la multiplicación y división se obtenía en descomposición del problema en 
-			sumas y restas, con el consiguiente aumento de tiempo de cálculo. Actualmente se incluyen 
-			circuitos específicos que realizan estas operaciones aritméticas. 
+			Antiguamente, la multiplicación y división se obtenía en descomposición del problema en sumas y restas, con el consiguiente aumento de tiempo de cálculo. Actualmente se incluyen circuitos específicos que realizan estas operaciones aritméticas. 
 			
 			Estos circuitos pueden ser combinacionaleso secuenciales.
 
@@ -270,15 +224,11 @@
 
 		La comparación de magnitudes se realiza mediante un circuito lógico denominado comparador.
 
-		Un número en formato binario se introduce en la entrada $A$ y otro en la entrada $B$. Las salidas 
-		$E$, $G$ y $L$ indican la relación entre los dos números, produciendo un nivel alto en la línea 
-		de salida correspondiente; $E = 1$ si $A = B$, $G = 1$ si $A > B$ y $L = 1$ si $A < B$. 
+		Un número en formato binario se introduce en la entrada $A$ y otro en la entrada $B$. Las salidas $E$, $G$ y $L$ indican la relación entre los dos números, produciendo un nivel alto en la línea de salida correspondiente; $E = 1$ si $A = B$, $G = 1$ si $A > B$ y $L = 1$ si $A < B$. 
 
 	\subsection{Unidades aritmético-lógicas}
 
-		La unidad aritmético-lógica (ALU) es un circuito combinacional capaz de realizar una amplia serie de 
-		operaciones aritméticas y lógicas entre dos palabras de $n$ bits. El tipo de operaciones a realizar 
-		entre ambas palabras es elegido mediante unas entradas de control de la ALU.
+		La unidad aritmético-lógica (ALU) es un circuito combinacional capaz de realizar una amplia serie de operaciones aritméticas y lógicas entre dos palabras de $n$ bits. El tipo de operaciones a realizar entre ambas palabras es elegido mediante unas entradas de control de la ALU.
 
 		\begin{figure}[htp]
 			\centering
@@ -287,13 +237,9 @@
 			\label{alu2bits}
 		\end{figure}
 
-		La figura \ref{alu2bits} representa una ALU de dos bits. Las entradas $A0$ y $B0$ se corresponden 
-		con el bit menos significativo de los números de entrada; a diferencia de las entradas $A1$ y $B1$, 
-		que corresponden con el bit más significativo.
+		La figura \ref{alu2bits} representa una ALU de dos bits. Las entradas $A0$ y $B0$ se corresponden con el bit menos significativo de los números de entrada; a diferencia de las entradas $A1$ y $B1$, que corresponden con el bit más significativo.
 
-		Las entradas $A$ y $B$ se dirigen hacia las cuatro puertas: XOR, AND, OR y XOR. Por último se realiza 
-		una multiplexación para seleccionar la salida de qué operación se quiere dar como salida de la ALU. 
-		La entrada $OP0-2$ determina cuál de las funciones se van a realizar:
+		Las entradas $A$ y $B$ se dirigen hacia las cuatro puertas: XOR, AND, OR y XOR. Por último se realiza una multiplexación para seleccionar la salida de qué operación se quiere dar como salida de la ALU. La entrada $OP0-2$ determina cuál de las funciones se van a realizar:
 
 		\begin{itemize}
 			\item $OP = 000 \Rightarrow XOR$
@@ -302,14 +248,11 @@
 			\item $OP = 011 \Rightarrow $ Suma
 		\end{itemize}
   
-		Estas entradas son las líneas de control de la ALU y sirven para seleccionar qué operación queremos que 
-		realice.
+		Estas entradas son las líneas de control de la ALU y sirven para seleccionar qué operación queremos que realice.
 
 	\subsection{Generadores y comprobadores de paridad}
 
-		La paridad es un método de validación de la información codificada en binario. Consiste en añadir 
-		un bit que hace que el número de 1s que aparece en la información sea par (paridad par) o impar 
-		(paridad impar). Por ejemplo, en caso de utilizar paridad par:
+		La paridad es un método de validación de la información codificada en binario. Consiste en añadir un bit que hace que el número de 1s que aparece en la información sea par (paridad par) o impar (paridad impar). Por ejemplo, en caso de utilizar paridad par:
 
 		\[00110100 \rightarrow 001101001\]
 		\[10011100 \rightarrow 100111000\]
@@ -319,11 +262,9 @@
 		\[00110100 \rightarrow 001101000\]
 		\[10011100 \rightarrow 100111001\]
 
-		De esta forma podemos detectar un error en la información, si este error se produce en un único bit y 
-		sólo permite detectar errores, no corregirlos.
+		De esta forma podemos detectar un error en la información, si este error se produce en un único bit y sólo permite detectar errores, no corregirlos.
 
-		Este tipo de comprobación suele usarse en transmisiones de información seguras; o de almacenamiento de 
-		información (en memoria principal, por ejemplo) al que quiere dotársele de una seguridad muy alta:
+		Este tipo de comprobación suele usarse en transmisiones de información seguras; o de almacenamiento de información (en memoria principal, por ejemplo) al que quiere dotársele de una seguridad muy alta:
 
 		\[00110100 \xrightarrow[]{\text{paridad par}} 001101001 \xrightarrow[]{\text{transmisión}} 00110001 \rightarrow err\] 
 
@@ -333,12 +274,9 @@
 
 	\subsection{Multiplexores}
 
-		Un multiplexor es un circuito que transmite los datos digitales procedentes de una de sus líneas 
-		de entrada a una única línea de salida, según se especifique en sus líneas de control.
+		Un multiplexor es un circuito que transmite los datos digitales procedentes de una de sus líneas de entrada a una única línea de salida, según se especifique en sus líneas de control.
 
-		Funcionalmente se pueden representar mediante una operación de conmutación electrónica, que secuencialmente 
-		conecta cada una de las líneas de entrada a la línea de salida; es un distribuidor de las entradas hacia 
-		una única salida (encaminador).
+		Funcionalmente se pueden representar mediante una operación de conmutación electrónica, que secuencialmente conecta cada una de las líneas de entrada a la línea de salida; es un distribuidor de las entradas hacia una única salida (encaminador).
 
 		Para un multiplexor de $n$ líneas de control el número de entradas será $2^n$.
 
@@ -349,14 +287,11 @@
 			\label{multiplexor}
 		\end{figure}
 
-		La figura \ref{multiplexor} es la representación de un multiplexor de dos entradas, que posee una 
-		entrada habilitadora que, cuando está activa, permite al multiplexor funcionar correctamente; en caso 
-		contrario el valor de salida es 0.
+		La figura \ref{multiplexor} es la representación de un multiplexor de dos entradas, que posee una entrada habilitadora que, cuando está activa, permite al multiplexor funcionar correctamente; en caso contrario el valor de salida es 0.
 
 	\subsection{Demultiplexores}
 
-		Un demultiplexor realiza la función inversa de un multiplexor; transmitiendo los datos digitales de una 
-		línea de entrada a una de varias líneas de salida, según la selección realizada.
+		Un demultiplexor realiza la función inversa de un multiplexor; transmitiendo los datos digitales de una línea de entrada a una de varias líneas de salida, según la selección realizada.
 
 		\begin{figure}[htp]
 			\centering
@@ -369,9 +304,7 @@
 
 	\subsection{Codificadores}
 
-		Un código es un conjunto de bits ordenados de acuerdo a un modelo, empleado para representar información.
-		Un convertidor de código cambia el formato de una información codificada a otro formato de código, implementándose 
-		mediante un circuito denominado codificador.
+		Un código es un conjunto de bits ordenados de acuerdo a un modelo, empleado para representar información.Un convertidor de código cambia el formato de una información codificada a otro formato de código, implementándose mediante un circuito denominado codificador.
 
 		Estos circuitos disponen de $2n$ entradas y $n$ salidas, tal y como vemos en la figura \ref{codificador}.
 
@@ -389,35 +322,27 @@
 		\subsubsection{Codificador decimal-BCD con prioridad}
 
 			Realiza la misma función y además puede emplearse para detectar prioridad\footnote{
-				La función de prioridad significa que cuando hay varias entradas decimales activas, el 
-				codificador producirá la salida BCD correspondiente al dígito decimal de entrada de más 
-				alto orden que se encuentre activo, e ignorará cualquier otra entrada activa.
+				La función de prioridad significa que cuando hay varias entradas decimales activas, el codificador producirá la salida BCD correspondiente al dígito decimal de entrada de más alto orden que se encuentre activo, e ignorará cualquier otra entrada activa.
 
 				Por ejemplo: para las entradas activas $6$ y $3$, la salida BCD será $0110$ ($6$ en binario).
 			}.
 	\subsection{Decodificadores}
 
-		Un decodificador es un circuito combinacional que convierte la información codificada en otra información 
-		no codificada. Uno de sus usos más habituales es el direccionamiento de la memoria del computador. 
+		Un decodificador es un circuito combinacional que convierte la información codificada en otra información no codificada. Uno de sus usos más habituales es el direccionamiento de la memoria del computador. 
 
 		Un decodificador de $n$ entradas es capaz de direccionar $2^n$ direcciones.
 
 		\subsubsection{Decodificador binario/decimal}
 
-			Genera una salida para cada combinación de entrdas, siendo ésta la entrada pero decodificada.
-			Para poder decodificar todas las posibles combinaciones de las entradas son necesarias $2^n$
-			salidas, siendo $n$ el número de entradas.
+			Genera una salida para cada combinación de entrdas, siendo ésta la entrada pero decodificada. Para poder decodificar todas las posibles combinaciones de las entradas son necesarias $2^n$ salidas, siendo $n$ el número de entradas.
 
 		\subsubsection{Decodificador BCD/decimal}
 
-			Convierte código BCD en uno de los diez posibles dígitos decimales. Frecuentemente se le denomina 
-			decodificador de 4 líneas a 10 líneas.
+			Convierte código BCD en uno de los diez posibles dígitos decimales. Frecuentemente se le denomina decodificador de 4 líneas a 10 líneas.
 
 		\subsubsection{Decodificador BCD/7 segmentos}
 
-			Acepta código BCD en sus entradas y proporciona salidas capaces de excitar un display de 7 
-			segmentos para mostrar un dígito decimal, donde cada segmento puede encenderse o apagarse de 
-			forma individual, denominados cada uno con una letra.
+			Acepta código BCD en sus entradas y proporciona salidas capaces de excitar un display de 7 segmentos para mostrar un dígito decimal, donde cada segmento puede encenderse o apagarse de forma individual, denominados cada uno con una letra.
 
 			\begin{figure}[htp]
 				\centering
@@ -426,24 +351,17 @@
 				\label{7segmentos}
 			\end{figure}
 
-			Para representar un número es necesario encender los segmentos adecuados (véase figura 
-			\ref{7segmentos}), por ejemplo, para representar el número 2 es necesario encender los 
-			segmentos $a$, $b$, $g$, $e$ y $d$.
+			Para representar un número es necesario encender los segmentos adecuados (véase figura \ref{7segmentos}), por ejemplo, para representar el número 2 es necesario encender los segmentos $a$, $b$, $g$, $e$ y $d$.
 
 		\subsubsection{Conexión en cascada}
 
-			Es posible conectar varios decodificadores en cascada para aumentar el número de entradas y 
-			salidas.
+			Es posible conectar varios decodificadores en cascada para aumentar el número de entradas y salidas.
 	
 \section{Circuitos secuenciales}
 
-	Como hemos estudiado, en la lógica combinacional las salidas están determinadas sólo por el valor de las 
-	entradas, y las salidas no sólo están condicionadas por las entradas sino también por la secuencia de 
-	entradas precedentes\footnote{La secuencia de entradas anteriores define un estado de circuito}. Y para 
-	poder almacenar el estado en el que se encuentra el circuito es necesario que este disponga de memoria.
+	Como hemos estudiado, en la lógica combinacional las salidas están determinadas sólo por el valor de las entradas, y las salidas no sólo están condicionadas por las entradas sino también por la secuencia de entradas precedentes\footnote{La secuencia de entradas anteriores define un estado de circuito}. Y para poder almacenar el estado en el que se encuentra el circuito es necesario que este disponga de memoria.
 
-	Por lo tanto, la salida de un sistema secuencial está determinada por las entradas presentes y por la 
-	información almacenada en los elementos de memoria.
+	Por lo tanto, la salida de un sistema secuencial está determinada por las entradas presentes y por la información almacenada en los elementos de memoria.
 
 	\begin{figure}[htp]
 		\centering
@@ -455,21 +373,16 @@
 	Como vemos en la figura \ref{circuitosecuencial}, el circuito se compone de dos partes fundamentales:
 
 	\begin{itemize}
-		\item Lógica combinacional que convierte las entradas y el estado actual del circuito en la salida
-		y el estado siguiente (estado en el que se queda el circuito).
+		\item Lógica combinacional que convierte las entradas y el estado actual del circuito en la salida y el estado siguiente (estado en el que se queda el circuito).
 		\item Memoria\footnote{
-			La mayoría de los sistemas digitales necesitan almacenar información, de hecho suele ser la 
-			razón de ser del circuito. Algunos tipos de dispositivos de almacenamiento son: biestables, 
-			registros, memorias semiconductoras, discos magnéticos, cintas magnéticas y discos ópticos.
+			La mayoría de los sistemas digitales necesitan almacenar información, de hecho suele ser la razón de ser del circuito. Algunos tipos de dispositivos de almacenamiento son: biestables, registros, memorias semiconductoras, discos magnéticos, cintas magnéticas y discos ópticos.
 		} que almacena el estado en el que se encuentra el circuito.
 	\end{itemize}
 
 	En lógica secuencial es importante el parámetro temporal, pudiendo ser:
 
 	\begin{itemize}
-		\item \textbf{Circuitos síncronos}. El estado y la salida cambian cuando se produce un evento de reloj
-		y en las entradas existen valores adecuados. Por lo tanto, existe una señal (en este caso un reloj que 
-		genera una señal cuadrada de periodo fijo) que controla la actividad del circuito.
+		\item \textbf{Circuitos síncronos}. El estado y la salida cambian cuando se produce un evento de reloj y en las entradas existen valores adecuados. Por lo tanto, existe una señal (en este caso un reloj que genera una señal cuadrada de periodo fijo) que controla la actividad del circuito.
 
 		Los eventos de reloj posibles son:
 
@@ -480,10 +393,7 @@
 			\item Flanco de bajada (el valor de la señal pasa de uno lógico a cero lógico).
 		\end{itemize}
 
-		Aunque la señal de reloj de forma ideal es cuadrada, realmente tiene la forma que podemos observar 
-		en la figura \ref{clocksignal}. Como observamos, los niveles lógicos son realmente intervalos de 
-		voltaje que hacen que se activen los elementos adecuados del circuito secuencial para que se genere 
-		la salida y el estado siguiente.
+		Aunque la señal de reloj de forma ideal es cuadrada, realmente tiene la forma que podemos observar en la figura \ref{clocksignal}. Como observamos, los niveles lógicos son realmente intervalos de voltaje que hacen que se activen los elementos adecuados del circuito secuencial para que se genere la salida y el estado siguiente.
 
 		\begin{figure}[htp]
 			\centering
@@ -497,26 +407,18 @@
 
 	\subsection{Biestables}
 
-		Un biestable es un circuito lógico que posee dos estados estables, denominados SET (1) y RESET (0), en 
-		los cuales se puede mantener indefinidamente, permitiendo el almacenamiento de un bit. Son implementados 
-		mediante puertas lógicas y son bloques básicos de construcción de contadores, registros... También 
-		son empleados en ciertos tipos de memorias.
+		Un biestable es un circuito lógico que posee dos estados estables, denominados SET (1) y RESET (0), en los cuales se puede mantener indefinidamente, permitiendo el almacenamiento de un bit. Son implementados mediante puertas lógicas y son bloques básicos de construcción de contadores, registros... También son empleados en ciertos tipos de memorias.
 
 		\subsubsection{Biestable RS}\label{biestablers}
 
-			Siendo RS = RESET-SET con entrada activa a nivel alto, es un tipo de dispositivo lógico con 
-			dos salidas $Q$ y $\overline{Q}$, siendo una complementaria de la otra. El funcionamiento es el 
-			siguiente:
+			Siendo RS = RESET-SET con entrada activa a nivel alto, es un tipo de dispositivo lógico con dos salidas $Q$ y $\overline{Q}$, siendo una complementaria de la otra. El funcionamiento es el siguiente:
 
 			\begin{enumerate}
 				\item Si dos entradas están a 0 la salida permanece igual.
-				\item Si la entrada $S$ está a 1 y la entrada $R$ a 0 (SET) la entrada $Q$ 
-				estará a 1 y la complementaria a 0.
-				\item Si la entrada $S$ está a 0 y la entrada $R$ está a 1 (RESET) la entrada 
-				$Q$ estará a 0 y la complementaria a 1.
+				\item Si la entrada $S$ está a 1 y la entrada $R$ a 0 (SET) la entrada $Q$ estará a 1 y la complementaria a 0.
+				\item Si la entrada $S$ está a 0 y la entrada $R$ está a 1 (RESET) la entrada $Q$ estará a 0 y la complementaria a 1.
 				\item Si ambas entradas están a 1 ambas salidas estarán a 0\footnote{
-					Esto no concuerda con las deficiniones dadas para las salidas, siendo que una 
-					es complementaria a la otra, por lo que se dice que es un estado erróneo.
+					Esto no concuerda con las deficiniones dadas para las salidas, siendo que una es complementaria a la otra, por lo que se dice que es un estado erróneo.
 				}.
 			\end{enumerate}
 
@@ -529,8 +431,7 @@
 	
 		\subsubsection{Biestable D}
 
-			Dispone únicamente de una entrada para realizar operaciones de SET y RESET, disponiendo 
-			también de entrada de habilitación (véase figura \ref{biestabled}).
+			Dispone únicamente de una entrada para realizar operaciones de SET y RESET, disponiendo también de entrada de habilitación (véase figura \ref{biestabled}).
 
 			\begin{figure}[htp]
 				\centering
@@ -539,8 +440,7 @@
 				\label{biestabled}
 			\end{figure}
 
-			Una posible implementación utilizando puertas NAND sería la observada en la 
-			figura \ref{biestabled2}.
+			Una posible implementación utilizando puertas NAND sería la observada en la figura \ref{biestabled2}.
 
 			\begin{figure}[htp]
 				\centering
@@ -551,13 +451,9 @@
 
 		\subsubsection{Biestable JK}
 
-			Con un funcionamiento similar al biestable RS (véase sección \ref{biestablers}), 
-			salvo que soluciona el problema de tener una salida errónea cuando las entradas se 
-			encuentran activas a la vez si es activo por flanco. La entrada $J$ es la equivalente 
-			a la entrada $S$. y la entrada $K$ a la $R$ (véase figura \ref{biestablejk}).
+			Con un funcionamiento similar al biestable RS (véase sección \ref{biestablers}), salvo que soluciona el problema de tener una salida errónea cuando las entradas se encuentran activas a la vez si es activo por flanco. La entrada $J$ es la equivalente a la entrada $S$. y la entrada $K$ a la $R$ (véase figura \ref{biestablejk}).
 
-			Este biestable hace que la salida cambie al valor contrario cuando las dos entradas 
-			se colocan a nivel alto, denominándose \textbf{basculación}.
+			Este biestable hace que la salida cambie al valor contrario cuando las dos entradas se colocan a nivel alto, denominándose \textbf{basculación}.
 
 			\begin{figure}[htp]
 				\centering
@@ -568,10 +464,7 @@
 
 		\subsubsection{Entradas asíncronas en los biestables}
 
-			En muchas salidas resulta útil poder poner la salida de un biestable a un determinado 
-			valor independientemente del reloj y de las entradas. Es por esto que muchos dispositivos 
-			tienen entradas adicionales para ello. Estas entradas reciben el nombre de entradas 
-			asíncronas ya que no dependen del reloj. Las dos más típicas son:
+			En muchas salidas resulta útil poder poner la salida de un biestable a un determinado valor independientemente del reloj y de las entradas. Es por esto que muchos dispositivos tienen entradas adicionales para ello. Estas entradas reciben el nombre de entradas asíncronas ya que no dependen del reloj. Las dos más típicas son:
 
 			\begin{itemize}
 				\item PRESET (PRE). Coloca la salida a nivel alto.
@@ -589,17 +482,12 @@
 
 		\subsubsection{Parámetros temporales}
 
-			Existen una serie de parámetros temporales a tener en cuenta a la hora de diseñar 
-			circuitos secuenciales:
+			Existen una serie de parámetros temporales a tener en cuenta a la hora de diseñar circuitos secuenciales:
 
 			\begin{itemize}
-				\item \textbf{Tiempo de propagación ($t_{co}$)}. Es el tiempo que transcurre
-				desde que llega un pulso de reloj o se activa una entrada asíncrona hasta que 
-				la salida toma el valor correspondiente.
-				\item \textbf{Tiempo de setup ($t_{su}$)}. Es el tiempo que transcurre desde que 
-				se activa una entrada hasta que llega la señal de reloj que habilita el circuito.
-				\item \textbf{Tiempo de hold ($t_{t_h}$)}. Es el tiempo que transcurre desde que 
-				llega la señal de reloj que habilita el circuito hasta que se desactiva una entrada.
+				\item \textbf{Tiempo de propagación ($t_{co}$)}. Es el tiempo que transcurre desde que llega un pulso de reloj o se activa una entrada asíncrona hasta que la salida toma el valor correspondiente.
+				\item \textbf{Tiempo de setup ($t_{su}$)}. Es el tiempo que transcurre desde que se activa una entrada hasta que llega la señal de reloj que habilita el circuito.
+				\item \textbf{Tiempo de hold ($t_{t_h}$)}. Es el tiempo que transcurre desde que llega la señal de reloj que habilita el circuito hasta que se desactiva una entrada.
 			\end{itemize}
 
 			\begin{figure}[htp]
@@ -611,22 +499,15 @@
 
 	\subsection{Registros}
 
-		Uno de los elementos de memoria básico en todos los computadores es el registro, que 
-		está formado por un conjunto de biestales interconectados entre ellos de 
-		forma que almacenen y desplacen la información. Es un circuito digital que con dos funciones:
-		almacenamiento y movimiento de datos.
+		Uno de los elementos de memoria básico en todos los computadores es el registro, que está formado por un conjunto de biestales interconectados entre ellos de forma que almacenen y desplacen la información. Es un circuito digital que con dos funciones: almacenamiento y movimiento de datos.
 
-		Un registro de desplazamiento que permite almacenar $n$ bits estará 
-		formado por $n$ biestables, uno por bit que se desea almacenar.
+		Un registro de desplazamiento que permite almacenar $n$ bits estará formado por $n$ biestables, uno por bit que se desea almacenar.
 
-		Existen dos tipos básicos de tratamiento de la información por parte de los registros, 
-		serie y paralelo; que pueden combinarse tal que:
+		Existen dos tipos básicos de tratamiento de la información por parte de los registros, serie y paralelo; que pueden combinarse tal que:
 
 		\subsubsection{Registro de entrada serie, salida serie}
 
-			La salida de un biestable tipo D se conecta a la entrada del siguiente, 
-			de tal forma que en cada pulso de reloj los bits van pasando de uno en uno en 
-			cada biestable. Véase figura \ref{serie_serie}.
+			La salida de un biestable tipo D se conecta a la entrada del siguiente, de tal forma que en cada pulso de reloj los bits van pasando de uno en uno en cada biestable. Véase figura \ref{serie_serie}.
 
 			\begin{figure}[htp]
 				\centering
@@ -635,8 +516,7 @@
 				\label{serie_serie}
 			\end{figure}
 
-			Otra posible implementación, para 5bits en este caso y utilizando 
-			biestables RS puede ser la expuesta en la figura \ref{serie_serie2}.
+			Otra posible implementación, para 5bits en este caso y utilizando biestables RS puede ser la expuesta en la figura \ref{serie_serie2}.
 
 			\begin{figure}[htp]
 				\centering
@@ -647,10 +527,7 @@
 
 		\subsubsection{Registro de entrada serie, salida paralelo}
 
-			Se toman las salidas de cada biestable para construir la salida en paralelo, como 
-			la carga o almacenamiento de los datos se realiza en serie, cuando se ha cargado el 
-			último biestable podemos tomar una lectura de todos ellos a la vez.
-			Véase figura \ref{serie_paralelo}.
+			Se toman las salidas de cada biestable para construir la salida en paralelo, como la carga o almacenamiento de los datos se realiza en serie, cuando se ha cargado el último biestable podemos tomar una lectura de todos ellos a la vez. Véase figura \ref{serie_paralelo}.
 
 			\begin{figure}[htp]
 				\centering
@@ -661,9 +538,7 @@
 
 		\subsubsection{Registro de entrada paralelo, salida serie}
 
-			La entrada de datos se realiza en paralelo, añadiendo lógica adicional y 
-			una entrada que indica al circuito si tiene que cargar el registro o desplazar 
-			la información hacia la salida. Véase figura \ref{paralelo_serie}.
+			La entrada de datos se realiza en paralelo, añadiendo lógica adicional y una entrada que indica al circuito si tiene que cargar el registro o desplazar la información hacia la salida. Véase figura \ref{paralelo_serie}.
 
 			\begin{figure}[htp]
 				\centering
@@ -672,9 +547,7 @@
 				\label{paralelo_serie}
 			\end{figure}
 
-			Otra posible implementación utiliza biestables de tipo RS y multiplexores de 
-			dos entradas y una salida para construir un registro de 3 bits
-			Véase figura \ref{paralelo_serie2}.
+			Otra posible implementación utiliza biestables de tipo RS y multiplexores de dos entradas y una salida para construir un registro de 3 bits. Véase figura \ref{paralelo_serie2}.
 
 			\begin{figure}[htp]
 				\centering
@@ -685,9 +558,7 @@
 
 		\subsubsection{Registro de entrada paralelo, salida paralelo}
 
-			Los biestables sólo comparten la entrada de reloj. Las entradas entran directamente 
-			a la entrada de cada biestable y para la salida se toma la salida de cada biestable.
-			Véase figura \ref{paralelo_paralelo}.
+			Los biestables sólo comparten la entrada de reloj. Las entradas entran directamente a la entrada de cada biestable y para la salida se toma la salida de cada biestable. Véase figura \ref{paralelo_paralelo}.
 
 			\begin{figure}[htp]
 				\centering
@@ -698,9 +569,7 @@
 
 		\subsubsection{Registro universal}
 
-			Mediante dos entradas de control realiza las funciones de almacenamiento y desplazamiento 
-			de bits de todos los registros vistos anteriormente. Puede hacer los desplazamientos en 
-			ambas direcciones. Véase figura \ref{registrouniversal}.
+			Mediante dos entradas de control realiza las funciones de almacenamiento y desplazamiento de bits de todos los registros vistos anteriormente. Puede hacer los desplazamientos en ambas direcciones. Véase figura \ref{registrouniversal}.
 				
 			\begin{figure}[htp]
 				\centering
@@ -711,11 +580,7 @@
 
 			\paragraph{Registro universal: 74LS194}
 
-				Este integrado implementa un registro universal de 4 bits utilizando biestables de tipo RS.
-				Dispone de cuatro entradas en paralelo ($P0-P3$) y dos en serie ($D_{SR}$ y $D_{SL}$).
-				También dispone de cuatro salidas en paralelo ($Q0-Q3$) y dos entradas de control ($S0$ y $S1$).
-				Cuenta con una entrada reset ($MR$) y una entrada de reloj.
-				Véase figura \ref{registrouniversal2}.
+				Este integrado implementa un registro universal de 4 bits utilizando biestables de tipo RS. Dispone de cuatro entradas en paralelo ($P0-P3$) y dos en serie ($D_{SR}$ y $D_{SL}$). También dispone de cuatro salidas en paralelo ($Q0-Q3$) y dos entradas de control ($S0$ y $S1$). Cuenta con una entrada reset ($MR$) y una entrada de reloj. Véase figura \ref{registrouniversal2}.
 
 				\begin{figure}[htp]
 					\centering
