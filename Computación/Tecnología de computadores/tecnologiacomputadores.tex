@@ -606,4 +606,55 @@
 
 	\subsection{Contadores}
 
+		El objetivo es el de contar sucesos, normalmente flancos de subida o bajada en un reloj. 
+		
+		\subsubsection{Contadores síncronos}
+
+			Todos los biestables del contador reciben en el mismo instante la señal de reloj.
+
+			Su posible implementación de un contador síncrono utilizando biestables de tipo T se puede ver en la figura \ref{contador_sincrono}.
+
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[width=0.6\textwidth]{resources/contador_sincrono.png}
+				\caption{Contador binario de 4 bits usando biestables T}
+				\label{contador_sincrono}
+			\end{figure}
+
+			También es posible utilizar biestables D en la implementación. Véase figura \ref{contador_sincrono2}.
+
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[width=0.6\textwidth]{resources/contador_sincrono2.png}
+				\caption{Contador binario de 4 bits usando biestables D}
+				\label{contador_sincrono2}
+			\end{figure}
+
+			\paragraph{Contador Johnson}
+
+				Se basa en un registro de desplazamiento. Es una cadena de biestables, cada uno de ellos conectado directamente al anterior. La salida del último biestable cierra la cadena al estar conectada a la entrada del primer biestable. Véase figura \ref{contador_johnson}.
+
+				\begin{figure}[htp]
+					\centering
+					\includegraphics[width=0.5\textwidth]{resources/contador_johnson.png}
+					\caption{Contador Johnson}
+					\label{contador_johnson}
+				\end{figure}
+
+		\subsubsection{Contadores asíncronos}
+
+			Los biestables no reciben en el mismo instante la señal de reloj. Véase figura \ref{contador_asincrono}.
+
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[width=0.6\textwidth]{resources/contador_asincrono.png}
+				\caption{Contador asíncrono de 3 bits}
+				\label{contador_asincrono}
+			\end{figure}
+
+			No todos los biestables actúan al mismo tiempo por culpa de los retardos, algo que además se hace más notorio a medida que crece el número de biestables. Esto hace que estos contadores sean más lentos.
+
+
+
+
 \end{document}
