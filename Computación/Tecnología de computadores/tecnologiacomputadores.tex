@@ -702,14 +702,63 @@
 		
 		\subsubsection{Análisis de un \textit{autómata de Mealy}}
 
-			El circuito anterior es un sistema con una única entrada (X) y una única salida (Z), y dos biestables, uno tipo JK y otro tipo D que almacenarán los dos bits que representan el estado del circuito (hay cuatro posibles estados). El biestable JK almacenará el bit menos significativo (Q0) y el biestable D el más significativo (Q1). El circuito es un autómata de Mealy ya que la salida depende de la entrada y del estado en el que se encuentre el circuito, ya que la puerta NOR que hay justo antes de la salida tiene como entradas la salida de uno de los biestables y la entrada (X).
+			Es un sistema con una única entrada ($X$) y una única salida ($Z$), y dos biestables, uno tipo JK y otro tipo D que almacenarán los dos bits que representan el estado del circuito (hay cuatro posibles estados). El biestable JK almacenará el bit menos significativo ($Q_0$) y el biestable D el más significativo ($Q_1$). El circuito es un \textit{autómata de Mealy} ya que la salida depende de la entrada y del estado en el que se encuentre el circuito, ya que la puerta NOR que hay justo antes de la salida tiene como entradas la salida de uno de los biestables y la entrada ($X$).
 
 			\begin{figure}[htp]
 				\centering
-				\includegraphics[width=0.6\textwidth]{resources/sistema_secuencial_sincrono.png}
+				\includegraphics[width=0.8\textwidth]{resources/automata_mealy.png}
 				\caption{Circuito a analizar como \textit{autómata de Mealy}}
-				\label{sistema_secuencial_sincrono}
+				\label{automata_mealy}
 			\end{figure}
+
+			Los pasos a seguir para el análisis son:
+
+			\begin{enumerate}
+				\item Obtención de las ecuaciones lógicas de las señales que se están aplicando a las entradas de los biestables (tablas de excitación de los biestables).
+				\[J=X\]
+				\[K=Q_0\overline{Q_1}\]
+				\[D=\overline{Q_0}\]
+				\item Obtención de las ecuaciones lógicas del próximo estado, es decir, las próximas salidas de los biestables [$Q(t+1)$ ó $\overline{Q(t+1)}$]. Para ello se sustituirán las expresiones lógicas de las entradas (obtenidas en el punto anterior) en las ecuaciones de la salida del tipo de biestable que se esté utilizando.
+				\[\text{Biestables JK: } Q(t+1)=J(t)\overline{Q(t)}+\overline{K(t)}Q(t)\]
+				\[\text{Biestables T: } Q(t+1)=T(t)+Q(t)\]
+				\[\text{Biestables D: } Q(t+1)=D(t)\]
+				Susituyendo:
+				\[Q_0(t+1)=X\overline{Q_0(t)}+\overline{Q_0(t)\overline{Q_1(t)}}Q_0(t)\]
+				\[Q_1(t+1)=\overline{Q_0(t)}\]
+				\item Obtención de la función lógica de salida. Al ser un \textit{autómata de Mealy}, por lo que la salida es función de la entrada y el estado actual.
+				\[Z(t)=XQ_1(t)\]
+				\item Representación de la tabla de estados, que representa todas las combinaciones posibles, toda la información obtenida hasta ahora pero en forma de tabla. Véase figura \ref{automata_mealy01}.
+				
+				\begin{figure}[htp]
+					\centering
+					\includegraphics[width=0.4\textwidth]{resources/automata_mealy01.png}
+					\caption{Tabla de estados de \textit{autómata de Mealy}}
+					\label{automata_mealy01}
+				\end{figure}
+	
+				\item Asignación de nombres ($q_0$, $q_1$, $q_2$...) a cada combinación binaria de las salidas de los biestables, a todos los estados posibles.
+				\[q_0=00\]
+				\[q_1=01\]
+				\[q_2=10\]
+				\[q_3=11\]
+				Véase la tabla de estados actualizada con la asignación en figura \ref{automata_mealy02}. 
+
+				\begin{figure}[htp]
+					\centering
+					\includegraphics[width=0.4\textwidth]{resources/automata_mealy02.png}
+					\caption{Tabla de estados de \textit{autómata de Mealy} después de asignación de nombres}
+					\label{automata_mealy02}
+				\end{figure}
+
+				\item Representación del diagrama de estados o grafo de comportamiento del sistema. Véase figura \ref{automata_mealy03}.
+				
+				\begin{figure}[htp]
+					\centering
+					\includegraphics[width=0.6\textwidth]{resources/automata_mealy03.png}
+					\caption{Grafo \textit{autómata de Mealy}}
+					\label{automata_mealy03}
+				\end{figure}
+			\end{enumerate}
 
 	
 \end{document}
