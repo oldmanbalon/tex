@@ -696,5 +696,20 @@
 				$q(t)$.
 			\end{itemize}
 
+	\subsection{Análisis de circuitos secuenciales síncronos}
 
+		El proceso de análisis se puede sistematizar en una serie de pasos, que se describen a continuación para el caso de un \textit{autómata de Mealy} y posteriormente para un \textit{autómata de Moore}.
+		
+		\subsubsection{Análisis de un \textit{autómata de Mealy}}
+
+			El circuito anterior es un sistema con una única entrada (X) y una única salida (Z), y dos biestables, uno tipo JK y otro tipo D que almacenarán los dos bits que representan el estado del circuito (hay cuatro posibles estados). El biestable JK almacenará el bit menos significativo (Q0) y el biestable D el más significativo (Q1). El circuito es un autómata de Mealy ya que la salida depende de la entrada y del estado en el que se encuentre el circuito, ya que la puerta NOR que hay justo antes de la salida tiene como entradas la salida de uno de los biestables y la entrada (X).
+
+			\begin{figure}[htp]
+				\centering
+				\includegraphics[width=0.6\textwidth]{resources/sistema_secuencial_sincrono.png}
+				\caption{Circuito a analizar como \textit{autómata de Mealy}}
+				\label{sistema_secuencial_sincrono}
+			\end{figure}
+
+	
 \end{document}
