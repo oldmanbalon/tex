@@ -505,7 +505,7 @@
 
 	\subsection{Registros}
 
-		Uno de los elementos de memoria básico en todos los computadores es el registro, que está formado por un conjunto de biestales interconectados entre ellos de forma que almacenen y desplacen la información. Es un circuito digital que con dos funciones: almacenamiento y movimiento de datos.
+		Uno de los elementos de memoria básico en todos los computadores es el registro, que está formado por un conjunto de biestables interconectados entre ellos de forma que almacenen y desplacen la información. Es un circuito digital que con dos funciones: almacenamiento y movimiento de datos.
 
 		Un registro de desplazamiento que permite almacenar $n$ bits estará formado por $n$ biestables, uno por bit que se desea almacenar.
 
@@ -696,11 +696,11 @@
 				$q(t)$.
 			\end{itemize}
 
-	\subsection{Análisis de circuitos secuenciales síncronos}
+	\subsection{Análisis y síntesis de circuitos secuenciales síncronos}
 
 		El proceso de análisis se puede sistematizar en una serie de pasos, que se describen a continuación para el caso de un \textit{autómata de Mealy} y posteriormente para un \textit{autómata de Moore}.
 		
-		\subsubsection{Análisis de un \textit{autómata de Mealy}}
+		\subsubsection{Análisis y síntesis de un \textit{autómata de Mealy}}
 
 			Es un sistema con una única entrada ($X$) y una única salida ($Z$), y dos biestables, uno tipo JK y otro tipo D que almacenarán los dos bits que representan el estado del circuito (hay cuatro posibles estados). El biestable JK almacenará el bit menos significativo ($Q_0$) y el biestable D el más significativo ($Q_1$). El circuito es un \textit{autómata de Mealy} ya que la salida depende de la entrada y del estado en el que se encuentre el circuito, ya que la puerta NOR que hay justo antes de la salida tiene como entradas la salida de uno de los biestables y la entrada ($X$). Véase figura \ref{automata_mealy}.
 
@@ -760,6 +760,12 @@
 				\end{figure}
 			\end{enumerate}
 
+			Los pasos a seguir para la síntesis son:
+
+			\begin{enumerate}
+				\item 
+			\end{enumerate}
+
 		\subsubsection{Análisis de un \textit{autómata de Moore}}
 
 			Eliminamos la relación existente entre la entrada y la salida, de forma que la salida ahora es únicamente función del estado en el que se encuentre el circuito, creando un \textit{autómata de Moore}. Véase figura \ref{automata_moore}.
@@ -815,6 +821,11 @@
 					\label{automata_moore03}
 				\end{figure}
 			\end{enumerate}
+			
+			Los pasos a seguir para la síntesis son:
 
+			\begin{enumerate}
+				\item 
+			\end{enumerate}
 
 \end{document}
